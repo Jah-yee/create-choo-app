@@ -187,7 +187,7 @@ async function create (dir, description, argv) {
 
   series(cmds, function (err) {
     if (err) {
-      print('\nAborting installation. The following error occured:')
+      print('\nAborting installation. The following error occurred:')
       print('  ' + clr(err.message, 'red') + '\n')
       mapLimit(written, 1, cleanFile, function (err) {
         if (err) throw err
